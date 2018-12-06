@@ -1,7 +1,14 @@
 <h1><%= @artist.name %></h1>
 
+<<<<<<< HEAD
 <ul>
   <% @artist.song.each do |song| %>
+=======
+<h4><%= pluralize(@artist.songs.count, "song") %></h4>
+
+<ul>
+  <% @artist.songs.each do |song| %>
+>>>>>>> dfea399e76b398c75a8918bc3dcf5e42ad205d68
     <li>
       <%= link_to song.title, song_path(song) %>
     </li>
